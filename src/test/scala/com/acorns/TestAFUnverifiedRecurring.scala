@@ -8,6 +8,7 @@ import io.restassured.RestAssured.baseURI
 import io.restassured.http.{Cookie, Header}
 import io.restassured.path.json.JsonPath
 import io.restassured.response.Response
+import org.testng.Assert
 import io.restassured.specification.RequestSpecification
 import org.testng.annotations.Test
 
@@ -56,7 +57,7 @@ class TestAFUnverifiedRecurring extends UnverifiedUserRecurringTestBase {
       crUserhttprequest2.header(new Header("X-Client-Build","2.9.4"))
       crUserhttprequest2.header(new Header("X-Client-Os", "2.4.2"))
 
-      crUserhttprequest2.body("{\n \"user\": {\n \"email\": \"tstunvrec1948@acorns.com\",\n \"password\": \"Welcome1\"\n" +
+      crUserhttprequest2.body("{\n \"user\": {\n \"email\": \"tstunvrec1965@acorns.com\",\n \"password\": \"Welcome1\"\n" +
         "  },\n  \"udid\": \"08ce4a99-ca5c-4b34-a80a-19f4fef24c19\",\n  \"pin\": \"1234\",\n" +
         "  \"invitation_code\": null,\n  \"code_group\": \"acorns\",\n" +
         "  \"acceptance_document_version_uuids\": [\n    \"" + accptVersUUID + "\",\"" + accptVersETFUUID + "\"]\n}")
@@ -76,7 +77,7 @@ class TestAFUnverifiedRecurring extends UnverifiedUserRecurringTestBase {
       crUserhttprequest2.body("{ \"token\":\"" + usrToken + "\",\"user\":{\"profile\":{\"first_name\"" +
         ":\"TestUnverRec\",\"last_name\":\"Test\",\"dob\":\"1976/01/22\",\"phone_number\":\"7145565656\"," +
         "\"address1\":\"5601 East Orangethorpe Avenue\",\"city\":\"Anaheim\",\"state\":\"CA\",\"zip\":\"92807\"," +
-        "\"ssn\":\"982269896\",\"us_resident\":true,\"us_citizen\":true}}}")
+        "\"ssn\":\"982276896\",\"us_resident\":true,\"us_citizen\":true}}}")
 
       val updUserResponse: Response = crUserhttprequest2.put(baseURI)
       println("This is Updated User Response : " + updUserResponse.asString())
@@ -354,13 +355,7 @@ class TestAFUnverifiedRecurring extends UnverifiedUserRecurringTestBase {
       //Create Base Class instance
       val testBase: UnverifiedUserRecurringTestBase = new UnverifiedUserRecurringTestBase
 
-      if (actualCardValues equals testBase.unverifiedRecExpectedResult()) {
-
-        println("Test Passed!")
-      } else {
-        println("Test Failed!")
-      }
-
+      Assert.assertEquals(actualCardValues, testBase.unverifiedRecExpectedResult())
 
 
     }
