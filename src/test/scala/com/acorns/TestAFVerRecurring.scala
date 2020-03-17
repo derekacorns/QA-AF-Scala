@@ -55,7 +55,7 @@ class TestAFVerRecurring extends VerUserRecTestBase {
     crUserhttprequest2.header(new Header("X-Client-Build","2.9.4"))
     crUserhttprequest2.header(new Header("X-Client-Os", "2.4.2"))
 
-    crUserhttprequest2.body("{\n \"user\": {\n  \"email\": \"tstvfrrec146@acorns.com\",\n \"password\": \"Welcome1\"\n" +
+    crUserhttprequest2.body("{\n \"user\": {\n  \"email\": \"tstvfrrec148@acorns.com\",\n \"password\": \"Welcome1\"\n" +
       "  },\n  \"udid\": \"08ce4a99-ca5c-4b34-a80a-19f4fef24c19\",\n  \"pin\": \"1234\",\n" +
       "  \"invitation_code\": null,\n  \"code_group\": \"acorns\",\n" +
       "  \"acceptance_document_version_uuids\": [\n    \"" + accptVersUUID + "\",\"" + accptVersETFUUID + "\"]\n}")
@@ -75,7 +75,7 @@ class TestAFVerRecurring extends VerUserRecTestBase {
     crUserhttprequest2.body("{ \"token\":\"" + usrToken + "\",\"user\":{\"profile\":{\"first_name\"" +
       ":\"TestVerRec\",\"last_name\":\"Test\",\"dob\":\"1976/01/22\",\"phone_number\":\"7145565656\"," +
       "\"address1\":\"5601 East Orangethorpe Avenue\",\"city\":\"Anaheim\",\"state\":\"CA\",\"zip\":\"92807\"," +
-      "\"ssn\":\"428967642\",\"us_resident\":true,\"us_citizen\":true}}}")
+      "\"ssn\":\"468967642\",\"us_resident\":true,\"us_citizen\":true}}}")
 
     val updUserResponse: Response = crUserhttprequest2.put(baseURI)
     println("This is Updated User Response : " + updUserResponse.asString())
