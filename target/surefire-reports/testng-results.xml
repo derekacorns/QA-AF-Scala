@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="API Tests" duration-ms="32642" started-at="2020-03-16T18:16:28Z" finished-at="2020-03-16T18:17:00Z">
+    <groups>
+    </groups>
+    <test name="FirstTest" duration-ms="32642" started-at="2020-03-16T18:16:28Z" finished-at="2020-03-16T18:17:00Z">
+      <class name="com.acorns.TestAFVerRecurring">
+        <test-method status="PASS" signature="createVerRecUser()[pri:0, instance:com.acorns.TestAFVerRecurring@cb644e]" name="createVerRecUser" duration-ms="32613" started-at="2020-03-16T14:16:28Z" finished-at="2020-03-16T14:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createVerRecUser -->
+      </class> <!-- com.acorns.TestAFVerRecurring -->
+    </test> <!-- FirstTest -->
+  </suite> <!-- API Tests -->
+</testng-results>

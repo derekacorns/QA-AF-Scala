@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1584382588048" stop="1584382620683" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>API Tests : FirstTest[app=/Users/igorsandler/Desktop/Acorns.app, appiumServer=http://10.0.0.144:4723/wd/hub, udid=7182B50C-31FB-438F-B334-4C425EEF865C, version=13.1, device=iPhone 11 Pro Max, platform=iOS, timeout=60]</name>
+    <title>API Tests : FirstTest[app=/Users/igorsandler/Desktop/Acorns.app, appiumServer=http://10.0.0.144:4723/wd/hub, udid=7182B50C-31FB-438F-B334-4C425EEF865C, version=13.1, device=iPhone 11 Pro Max, platform=iOS, timeout=60]</title>
+    <test-cases>
+        <test-case start="1584382588072" stop="1584382620671" status="passed">
+            <name>createVerRecUser</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="API Tests"/>
+                <label name="testGroup" value="FirstTest"/>
+                <label name="testClass" value="com.acorns.TestAFVerRecurring"/>
+                <label name="testMethod" value="createVerRecUser"/>
+                <label name="host" value="Igors-MacBook-Pro.local"/>
+                <label name="thread" value="89990@Igors-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

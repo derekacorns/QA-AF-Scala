@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Tests" verbose="1">
+    <test name="FirstTest">
+                <parameter name="platform" value="iOS"></parameter>
+                <parameter name="version" value="13.1"></parameter>
+                <parameter name="device" value="iPhone 11 Pro Max"></parameter>
+                <parameter name="udid" value="7182B50C-31FB-438F-B334-4C425EEF865C"></parameter>
+                <parameter name="timeout" value="60"></parameter>
+                <parameter name="app"
+                           value="/Users/igorsandler/Desktop/Acorns.app"></parameter>
+        <parameter name="appiumServer" value="http://10.0.0.144:4723/wd/hub"></parameter>
+        <classes>
+            <class name="com.acorns.TestAFUnverifiedNoRec"/>
+<!--            <class name="com.acorns.TestInsuranceCalculator"/>-->
+<!--            <class name="com.acorns.ProtectHomeUI"/>-->
+<!--            <class name="com.acorns.ProtectDoubleUI"/>-->
+<!--            <class name="com.acorns.ProtectCKTPUI"/>-->
+<!--            <class name="com.acorns.SelectionNotListedUI"/>-->
+<!--            <class name="com.acorns.ProtectExploreHomeUI"/>-->
+<!--            <class name="com.acorns.PetHomeUI"/>-->
+<!--            <class name="com.acorns.PetUpdateProtectedUI"/>-->
+<!--            <class name="com.acorns.PetProtectedUnprotectedUI"/>-->
+<!--            <class name="com.acorns.LifeHomeUI"/>-->
+<!--            <class name="com.acorns.LifeUpdateChoiceUI"/>-->
+<!--            <class name="com.acorns.LifeUpdateProtectedUI"/>-->
+<!--            <class name="com.acorns.LifeProtectedUnprotectedUI"/>-->
+<!--            <class name="com.acorns.HomeUI"/>-->
+<!--            <class name="com.acorns.HomeUpdateChoiceUI"/>-->
+<!--            <class name="com.acorns.HomeUpdateProtectedUI"/>-->
+<!--            <class name="com.acorns.HomeProtectedUnprotectedUI"/>-->
+<!--            <class name="com.acorns.AutoHomeUI"/>-->
+<!--            <class name="com.acorns.AutoUpdateChoiceUI"/>-->
+<!--            <class name="com.acorns.AutoUpdateProtectedUI"/>-->
+<!--            <class name="com.acorns.AutoProtectedUnprotectedUI"/>-->
+<!--            <class name="com.acorns.TrustedPartnersUI"/>-->
+<!--            <class name="com.acorns.RentersHomeUI"/>-->
+<!--            <class name="com.acorns.RentersUpdateProtectedUI"/>-->
+<!--            <class name="com.acorns.RentersProtectedUnprotectedUI"/>-->
+<!--            <class name="com.acorns.CheckinUI"/>-->
+<!--            <class name="com.acorns.LearningCenterUI"/>-->
+<!--            <class name="com.acorns.TestUI"/>-->
+<!--            <class name="com.acorns.TestProtectUpdateAll"/>-->
+<!--            <class name="com.acorns.TestProtectUpdateOne"/>-->
+<!--            <class name="com.acorns.TestProtectUpdateTwo"/>-->
+<!--            <class name="com.acorns.TestProtectUpdateMutThree"/>-->
+<!--            <class name="com.acorns.TestProtectUpdateFour"/>-->
+<!--            <class name="com.acorns.TestProtectLearningCenter"/>-->
+<!--            <class name="com.acorns.TestProtectHome"/>-->
+<!--            <class name="com.acorns.TestProtectTrustedPartners"/>-->
+<!--            <class name="com.acorns.TestProtectHomeInsuranceAuto"/>-->
+<!--            <class name="com.acorns.TestProtectHomeInsuranceLife"/>-->
+<!--            <class name="com.acorns.TestProtectHomeInsuranceHome"/>-->
+<!--            <class name="com.acorns.TestProtectInsuranceHomeRenters"/>-->
+<!--            <class name="com.acorns.TestProtectHomeInsurancePet"/>-->
+<!--            <class name="com.acorns.TestProtectHomeArticleID"/>-->
+<!--            <class name="com.acorns.TestProtectUpdateFive"/>-->
+            <class name="com.acorns.TestAFUnverifiedRecurring"/>
+            <class name="com.acorns.TestAFUnverifiedNoFS"/>
+            <class name="com.acorns.TestAFVerNoRec"/>
+            <class name="com.acorns.TestAFVerRecurring"/>
+        </classes>
+    </test>
+<!--    <test name="SecondTest">-->
+<!--        <parameter name="platform" value="iOS"></parameter>-->
+<!--        <parameter name="version" value="13.1"></parameter>-->
+<!--        <parameter name="device" value="iPhone 7 Plus"></parameter>-->
+<!--        <parameter name="udid" value="6101E4CA-38B7-4D5C-BD09-A978E6C85CFC"></parameter>-->
+<!--        <parameter name="timeout" value="60"></parameter>-->
+<!--        <parameter name="app"-->
+<!--                   value="/Users/igorsandler/Desktop/Acorns.app"></parameter>-->
+<!--        <parameter name="appiumServer" value="http://10.0.0.144:4724/wd/hub"></parameter>-->
+
+<!--    <classes>-->
+<!--        <class name="com.acorns.ProtectCKTPUI"/>-->
+
+<!--    </classes>-->
+
+<!--    </test>-->
+</suite>
