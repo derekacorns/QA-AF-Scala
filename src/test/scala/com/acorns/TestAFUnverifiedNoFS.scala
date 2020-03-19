@@ -55,8 +55,8 @@ class TestAFUnverifiedNoFS extends UnverUserNoFSTestBase {
     crUserhttprequest2.header(new Header("X-Client-Build", "2.9.4"))
     crUserhttprequest2.header(new Header("X-Client-Os", "2.4.2"))
 
-    crUserhttprequest2.body("{\n \"user\": {\n \"email\": \"tstunvnofs146@acorns.com\",\n  \"password\": \"Welcome1\"\n" +
-      "  },\n  \"udid\": \"08ce4a99-ca5c-4b34-a80a-19f4fef24c19\",\n  \"pin\": \"1234\",\n" +
+    crUserhttprequest2.body("{\n \"user\": {\n \"email\": \"aliza96315@acorns.com\",\n  \"password\": \"Welcome1!\"\n" +
+      "  },\n  \"udid\": \"ae1d843f-75e9-49e2-9423-ca182b529584\",\n  \"pin\": \"1234\",\n" +
       "  \"invitation_code\": null,\n  \"code_group\": \"acorns\",\n" +
       "  \"acceptance_document_version_uuids\": [\n    \"" + accptVersUUID + "\",\"" + accptVersETFUUID + "\"]\n}")
 
